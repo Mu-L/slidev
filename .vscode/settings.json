@@ -17,7 +17,7 @@
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": false
+    "source.organizeImports": "never"
   },
 
   // Silent the stylistic rules in you IDE, but still auto fix them
@@ -45,5 +45,11 @@
     "json",
     "jsonc",
     "yaml"
-  ]
+  ],
+  "vitest.disableWorkspaceWarning": true,
+  "slidev.include": [
+    "**/slides.md",
+    "packages/vscode/syntax/slidev.example.md"
+  ],
+  "vue.server.hybridMode": "typeScriptPluginOnly"
 }
